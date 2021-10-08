@@ -1,0 +1,9 @@
+Front end: 
+[x] - Set up VueJs framework
+[x] - Add BootsWatch css for styling
+[ ] - Implement signin and signout components
+
+Back end:
+[ ] - DEPLOY EARLY ON LOL.
+[x] - Migrate Postgres with models
+[ ] - Implement JWT + OAuth2 authentication.
