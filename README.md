@@ -1,5 +1,7 @@
 # Better Twitter Clone!
-
+  ![](https://img.shields.io/badge/made%20by-DarienMiller-blue)
+  ![](https://img.shields.io/badge/Golang-1.17-yellow)
+  
 ## Description
 
 Full stack chat application built using Golang and Postgres in the backend, and VueJS and Bootswatch in the frontend. This is a much more sophisticated, true to the original Twitter clone implementing much more of the core features. The functionality I wish to add later on include:
