@@ -1,14 +1,15 @@
-# A much more sophisticated, true to the original Twitter clone implementing much more of the core features
+# Better Twitter Clone!
 
 ## Description
 
-Full stack chat application built using Golang and Postgres in the backend, and Javascript, HTML and CSS in the frontend. Current features include:
+Full stack chat application built using Golang and Postgres in the backend, and VueJS and Bootswatch in the frontend. This is a much more sophisticated, true to the original Twitter clone implementing much more of the core features. The functionality I wish to add later on include:
 
- - Users are able to chat in a public chat and private chat groups.
- - Global messages are able to be deleted.
- - Message history is tracked.
- - Group chat and single chat creation.
- - Add other users to specific group chats.
+ - JWT + Google OAuth2 authentication.
+ - The ability to for users to tweet.
+ - The ability for users to like, retweet and quote tweet other users tweets.
+ - The ability for users to reply to other tweets.
+ - A Private messaging system.
+ - Use News API to display current news.
 
  There's more to come!
 
