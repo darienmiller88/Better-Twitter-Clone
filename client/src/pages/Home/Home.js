@@ -26,7 +26,6 @@ export default function Home() {
                         render={() => (
                             <GoogleButton/>
                         )}
-                        buttonText="Login"
                         onSuccess={responseGoogle}
                         onFailure={responseGoogle}
                         cookiePolicy={'single_host_origin'}
@@ -37,7 +36,6 @@ export default function Home() {
                     <button onClick={null} id="sign-in">Sign in</button>
                 </div>
                 <div className="bird">
-                    {/* <img src={twitterBG} alt="background"/> */}
                     <img src={bird} alt="bird" id="bottomBird" className="bird-img"/>
                 </div>
             </div>
