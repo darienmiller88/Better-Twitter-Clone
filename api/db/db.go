@@ -1,12 +1,15 @@
 package db
 
 import (
+	"context"
 	"fmt"
 	"log"
 	"os"
 
 	"TwitterClone/api/models"
 
+	"github.com/go-pg/pg/v10/orm"
+	"github.com/go-pg/pg/v10"
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -16,6 +19,31 @@ import (
 type PostgresDB struct {
 	DB      *gorm.DB
 	MysqlDB *gorm.DB
+	NewDB   *pg.DB
+}
+
+func (p *PostgresDB) InitNewDB(){
+	p.NewDB = pg.Connect(&pg.Options{
+        User: "darienmiller88",
+		Password: "nintendowiiu000",
+		Database: "TwitterClone",
+    })
+	 
+	if err := p.NewDB.Ping(context.Background()); err != nil{
+		fmt.Println("connection dead")
+	}else{
+		fmt.Println("Connected to DB!")
+	}
+
+	for _, model := range []interface{}{&models.ReplyBase{}, &models.Reply2{}}{
+		err := p.NewDB.Model(model).CreateTable(&orm.CreateTableOptions{
+			FKConstraints: true,
+		})
+
+		fmt.Println("err:", err)
+	}
+	
+
 }
 
 //Method to connect to the Postgres database.

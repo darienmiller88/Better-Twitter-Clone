@@ -18,6 +18,7 @@ type User struct {
 	Email       string `json:"email"        gorm:"type:string; not null"`
 }
 
+
 func (u User) Validate() error {
 	return validation.ValidateStruct(&u,
 

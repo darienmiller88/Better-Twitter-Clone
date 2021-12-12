@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Otomanopee+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Otomanopee One', sans-serif; 
+}
+
+.signup{
+    display: grid;
+    grid-template-areas: "form" "bird";
+}
+
+.form {
+    grid-area: form;
+}
+
+.happening-now{
+    margin-top: 50px;
+    font-size: 65px;
+}
+
+.join{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.already{
+    margin-top: 20px;
+}
+
+.code-link{
+    color: gray;
+    transition: 0.5s;
+}
+
+.code-link:hover{
+    color: black;
+}
+
+#sign-in{
+    border-radius: 25px;
+    border: 1px grey solid;
+    color: #1DA1F2;
+    background-color: white;
+    padding: 10px;
+    width: 50%;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#sign-up{
+    background-color: #1DA1F2;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+
+#sign-up:hover{
+    cursor: pointer;
+    background-color: #1d60f2;
+}
+
+#sign-in:hover{
+    cursor: pointer;
+    background-color: #daedf4;
+}
+
+.bird {
+    display: grid;
+    grid-area: bird;
+    place-items: center;
+    background-size: cover;
+    background-image: url("../../img/twitter.png");
+}
+
+.bird-img{
+    transform: rotate(-10deg);
+}
+
+.form > div{
+    margin-left: 6%;
+}
+
+.form > button{
+    margin-left: 6%;
+}
+
+#topBird{
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+.footer{
+    width: 95vw;
+    text-align: center;
+    color: gray;
+    font-size: small;
+    /* border: 2px solid blue; */
+}
+
+
+@media only screen and (min-width: 901px) {
+    .signup {
+        grid-template-areas: "bird form";
+        grid-template-columns: 53% auto;
+        height: 110vh;
+    }
+
+    #bottomBird{
+        height: 60%;
+        width: 60%;
+        transform: rotate(-20deg);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .signup{
+        grid-template-rows: 70% auto;
+        height: 150vh;
+    }
+
+    #bottomBird{
+        height: 60%;
+        width: 20%;
+        transform: rotate(-20deg);
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+    .signup{
+        grid-template-rows: 75% auto;
+        height: 140vh;
+    }
+
+    .happening-now{
+        font-size: 43px;
+    }
+
+    #bottomBird{
+        height: 60%;
+        width: 35%;
+    }
+
+    #sign-up{
+        width: 90%;
+    }
+
+    #sign-in{
+        width: 90%;
+    }
+}

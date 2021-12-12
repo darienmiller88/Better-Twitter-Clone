@@ -9,6 +9,6 @@ type TweetController struct{
 	db *gorm.DB
 }
 
-func (t *TweetController) Init(routerGroup *gin.RouterGroup, db *gorm.DB){
+func (t *TweetController) Init(routerGroup *gin.RouterGroup){
 	
 }

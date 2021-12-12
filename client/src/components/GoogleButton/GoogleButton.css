@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Otomanopee+One&display=swap');
+
+.content{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-family: 'Lora', serif;
+    font-family: 'Otomanopee One', sans-serif; 
+    font-weight: 500;
+    font-size: 13px;
+    color: #3d4055;
+    background: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content > img {
+  height: 20px;
+  margin: 0 6px 0 0;
+}
+
+.content:hover{
+    cursor: pointer;
+    background-color: #D3D3D3;
+}
+
+.link-to-google{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .content{
+        width: 90%;
+    }
+}

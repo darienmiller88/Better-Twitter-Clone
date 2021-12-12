@@ -2,6 +2,8 @@ package controllers
 
 import(
 	"gorm.io/gorm"
+	//"github.com/go-pg/pg/v10"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -14,5 +16,5 @@ func (m *MountController) Init(route *gin.RouterGroup, db *gorm.DB){
 	tweetController := TweetController{}
 
 	userController.Init(route.Group("/users"), db)
-	tweetController.Init(route.Group("/tweets"), db)
+	tweetController.Init(route.Group("/tweets"))
 }
