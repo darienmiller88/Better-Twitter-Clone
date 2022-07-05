@@ -24,9 +24,9 @@ type PostgresDB struct {
 
 func (p *PostgresDB) InitNewDB(){
 	p.NewDB = pg.Connect(&pg.Options{
-        User: "darienmiller88",
-		Password: "nintendowiiu000",
-		Database: "TwitterClone",
+        User: "xxxxxx",
+		Password: "xxxxxx",
+		Database: "xxxxx",
     })
 	 
 	if err := p.NewDB.Ping(context.Background()); err != nil{
